@@ -38,7 +38,7 @@ class Setting implements SettingContract
      *
      * @throws \Throwable
      */
-    public function set(string $key, string $value) : bool
+    public function set(string $key, $value) : bool
     {
         $entry = SettingModel::where('key', $key)->first();
         if ($entry) {

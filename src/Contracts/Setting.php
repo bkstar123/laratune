@@ -27,7 +27,7 @@ interface Setting
      *
      * @throws \Throwable
      */
-    public function set(string $key, string $value) : bool;
+    public function set(string $key, $value) : bool;
 
     /**
      * @param string $key
