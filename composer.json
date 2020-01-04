@@ -1,0 +1,35 @@
+{
+    "name": "bkstar123/laratune",
+    "description": "A lightweight Laravel package provides a capability of tuning application database-persistent key/value settings",
+    "keywords": [
+        "laravel",
+        "database-persistent",
+        "settings",
+        "tuning"
+    ],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Hoang Anh Tuan",
+            "email": "hoangtuandhbk@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": "^7.1.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Bkstar123\\LaraTune\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Bkstar123\\LaraTune\\LaraTuneServiceProvider"
+            ]
+        }
+    }
+}
