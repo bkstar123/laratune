@@ -28,7 +28,9 @@ class LaraTuneServiceProvider extends ServiceProvider
         if (count(Schema::getColumnListing('settings'))) {
             $settings = Setting::all();
             foreach ($settings as $setting) {
-                Config::set("settings.{$setting->key}", $setting->value);
+                if (!is_null($setting->value)) {
+                    Config::set("settings.{$setting->key}", $setting->value);
+                }
             }
         }
     }
